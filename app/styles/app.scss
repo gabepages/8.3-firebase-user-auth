@@ -1,0 +1,71 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+body{
+  background-color: rgba(33, 33, 33, 1);
+}
+
+.container{
+  color: white;
+  text-align: center;
+}
+
+.button{
+  margin-top: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+#message{
+  background-color: rgba(249, 249, 249, 1);
+
+}
+.chatroom{
+  background-color: rgba(249, 249, 249, 1);
+  .own-message{
+    text-align: right;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 18px;
+    color: rgba(249, 249, 249, 1);
+    background-color: rgba(62, 182, 252, 1);
+    float: right;
+    clear: both;
+    .name{
+      color: rgba(230, 229, 235, 1);
+      display: block;
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+  .others-message{
+    text-align: left;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 18px;
+    color: rgba(249, 249, 249, 1);
+    background-color: rgba(33, 201, 0, 1);
+    float: left;
+    clear: both;
+    .name{
+      color: rgba(230, 229, 235, 1);
+      text-align: right;
+      clear: both;
+      display: block;
+      font-size: 12px;
+    }
+  }
+}
